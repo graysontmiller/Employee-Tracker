@@ -19,8 +19,8 @@ VALUES
 ('Jonathan', 'Gano', 1, null),
 ('Gabriel', 'Brooks', 2, null),
 ('Grayson', 'Miller', 3, null),
-('Silly', 'Goose', 3, 3),
-('Sil', 'Lygoose', 5, 8),
+('Silly', 'Goose', 3, 1),
+('Sil', 'Lygoose', 5, 1),
 ('Kaladin', 'Stormblessed', 6, null),
 ('Shallan', 'Davar', 4, null),
 ('Adolin', 'Kholin', 5, null);
