@@ -1,28 +1,26 @@
-USE employees;
-
-INSERT INTO departments ('name')
+INSERT INTO departments (department_name)
 VALUES
-  ('Sales'),
-  ('Engineering'),
-  ('Finance'),
-  ('Legal');
+('Accounting'),
+('IT'),
+('Sales');
 
-INSERT INTO roles (department_id, title, salary)
-VALUES
-  (1,'Salesperson', 80000),
-  (2,'Lead Engineer', 150000),
-  (2,'Software Engineer', 120000),
-  (3,'Account Manager', 160000),
-  (3,'Accountant', 125000),
-  (4,'Legal Team Lead', 250000),
-  (4,'Lawyer', 190000);
 
-INSERT INTO employees (role_id, first_name, last_name)
+INSERT INTO roles (title, salary, department_id)
 VALUES
-  (1,'Mike', 'Chan'),
-  (2,'Ashley', 'Rodriguez'),
-  (3,'Kevin', 'Tupik'),
-  (4,'Kunal', 'Singh'),
-  (5,'Malia', 'Brown'),
-  (6,'Sarah', 'Lourd'),
-  (7,'Tom', 'Allen');
+('Accountant', 70000, 1),
+('CFO', 350000, 1),
+('Software Engineer', 90000, 2),
+('CIO', 180000, 2),
+('Marketing Coordinator', 75000, 3),
+('Salesman', 100000, 3);
+
+INSERT INTO employees (first_name, last_name, role_id, manager_id)
+VALUES
+('Jonathan', 'Gano', 1, null),
+('Gabriel', 'Brooks', 2, null),
+('Grayson', 'Miller', 3, null),
+('Silly', 'Goose', 3, 3),
+('Sil', 'Lygoose', 5, 8),
+('Kaladin', 'Stormblessed', 6, null),
+('Shallan', 'Davar', 4, null),
+('Adolin', 'Kholin', 5, null);
